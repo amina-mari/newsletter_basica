@@ -1,0 +1,132 @@
+/* Treinando usar comentários pra eu poder estudar/revisar dps :) */
+
+* {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    background-color: darkcyan;
+}
+
+/* div titulo_container criada pra poder manipular o tamanho do h1 e ao 
+mesmo tempo colocar a cor de fundo de ponta a ponta */
+
+.titulo_container {
+    background-color: coral;
+    padding: 3%;
+}
+
+/* usando display inline-block titulo_h1 pra facilitar o alinhamento */
+
+.titulo_h1 {
+    font-family: 'Major Mono Display', 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 2rem;
+    width: 50%;
+}
+
+/* usando display flex no newsletter_container pra poder usar o flex-direction
+e deixar todos os componentes um embaixo do outro */
+
+.newsletter_container {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* classe newsletter_alerta criada no css pra estilizar o alerta que é dado para
+o usuário quando algum campo ainda precisa ser preenchido  */
+
+.newsletter_alerta {
+    background-color: rgb(187, 255, 255);
+    margin: 0;
+    width: 40%;
+    padding: 1%;
+}
+
+/* usando no newsletter_input uma borda personalizada (que não é visível, foi colocada só pra 
+evitar que o input aumente de tamanho quando coloco a borda no modo :focus) tirando a borda padrão antes
+e repetindo o mesmo processo no newsletter_input:hover */
+
+.newsletter_input {
+    background-color: rgb(187, 255, 255);
+    border: none;
+    border-bottom: 2px solid rgb(187, 255, 255);
+    width: 40%;
+    padding: 1%;
+}
+
+/* usando o modo :hover pra facilitar visualmente pra o usuário na hora de selecionar qual campo 
+quer preencher */
+
+.newsletter_input:hover {
+    background-color: rgb(20, 231, 231);
+    border-bottom: 2px solid rgb(20, 231, 231);
+}
+
+/* usando o modo focus pra facilitar visualmente pra o usuário qual campo ele está preenchendo 
+no momento. */
+
+.newsletter_input:focus{
+    background-color: rgb(0, 194, 194);
+    border-bottom: 2px solid darkcyan;
+    outline: none;
+}
+
+/* criando a classe que vai ser adicionada ao input pelo javascript caso o usuário tente 
+enviar o cadastro faltando preencher alguma coisa */
+
+.newsletter_input-erro {
+    background-color: rgb(255, 163, 130);
+    border-bottom: 2px solid coral;
+}
+
+/* estilizando o botão */
+
+.newsletter_botao{
+    background-color: rgb(20, 231, 231);
+    width: 42%;
+    padding: 1%;
+    border: none;
+}
+
+/* estilizando o hover do botão */
+
+.newsletter_botao:hover {
+    background-color: rgb(0, 194, 194);
+    cursor: pointer;    
+}
+
+/* tirando o outline (a linha que fica como se fosse uma borda) */
+
+.newsletter_botao:focus{
+    outline: none;
+}
+
+
+/* fazendo a parte responsiva aumentando a largura e o preenchimento dos componentes 
+pra não ficar muito pequeno pra ler em um celular */
+
+@media only screen and (max-width: 700px){
+    .titulo_h1 {
+        width: 80%;
+    }
+    .newsletter_alerta{
+        width: 80%;
+        padding: 3%;
+    }
+    .newsletter_input{
+        width: 80%;
+        padding: 3%;
+    }   
+
+    .newsletter_botao{
+        width: 86%;
+        padding: 3%;
+    }
+}

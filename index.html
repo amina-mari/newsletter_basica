@@ -1,0 +1,38 @@
+<!-- Treinando usar comentários pra eu poder estudar/revisar dps :) -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <!-- linkando o css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- linkando as duas fontes  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- dividindo o site em duas divs pra poder manipular elas separadamente -->
+
+    <div class="titulo_container">
+        <h1 class="titulo_h1">Assine nossa Newsletter e tenha sempre novidades em primeira mão!</h1>
+    </div>
+
+    <div class="newsletter_container" id="newsletter">
+        <!-- usando nos inputs a classe (pra estilizar pelo css), o id (pra manipular pelo javascript)
+        e o placeholder pra indicar o que tem que ser colocado em cada um -->
+        <input class="newsletter_input" id="input_nome" type="text" placeholder="Nome">
+        <input class="newsletter_input" id="input_email" type="email" placeholder="E-mail">
+
+        <button class="newsletter_botao" id="botao_newsletter">Assinar</button>
+    </div>
+    <!-- linkando o javascript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
