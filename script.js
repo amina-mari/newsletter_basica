@@ -1,7 +1,3 @@
-// Treinando usar comentários pra eu poder estudar/revisar dps :) 
-
-//console.log("funcionando legal")
-
 // capturando os elementos que vão ser manipulados com o getElementById
 
 let newsletter_container = document.getElementById("newsletter")
